@@ -21,12 +21,12 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/components/airports/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="252">
+              <caret line="107" column="17" lean-forward="true" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
               <folding>
                 <element signature="e#43#84#0" expanded="true" />
-                <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
-                <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
+                <marker date="1496855051783" expanded="true" signature="3749:4235" ph="..." />
+                <marker date="1496855051783" expanded="true" signature="3798:4222" ph="..." />
               </folding>
             </state>
           </provider>
@@ -461,16 +461,15 @@
       <workItem from="1496690410654" duration="402000" />
       <workItem from="1496761808578" duration="4137000" />
       <workItem from="1496841914239" duration="19000" />
-      <workItem from="1496842903985" duration="9621000" />
+      <workItem from="1496842903985" duration="12017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20168000" />
+    <option name="totallyTimeSpent" value="22564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24907456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -478,7 +477,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38049304" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38049304" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -535,8 +534,8 @@
           <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
-            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3749:4235" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3798:4222" ph="..." />
           </folding>
         </state>
       </provider>
@@ -608,8 +607,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
-            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3749:4235" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3798:4222" ph="..." />
           </folding>
         </state>
       </provider>
@@ -663,8 +662,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
-            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3749:4235" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3798:4222" ph="..." />
           </folding>
         </state>
       </provider>
@@ -778,8 +777,8 @@
           <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
-            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3749:4235" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3798:4222" ph="..." />
           </folding>
         </state>
       </provider>
@@ -917,12 +916,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/airports/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="252">
+          <caret line="107" column="17" lean-forward="true" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
-            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3749:4235" ph="..." />
+            <marker date="1496855051783" expanded="true" signature="3798:4222" ph="..." />
           </folding>
         </state>
       </provider>

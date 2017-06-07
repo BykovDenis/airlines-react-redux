@@ -21,6 +21,7 @@ export default class Airports extends Component {
     super(props);
     this.handleCellClick = this.handleCellClick.bind(this);
     this.handleSortOrderChange = this.handleSortOrderChange.bind(this);
+    this.state = { fs: true };
   }
   componentWillMount() {
     this.getActualData();
@@ -38,21 +39,42 @@ export default class Airports extends Component {
     }
     this.tableData = [];
     const airports = this.props.infoData.entities.airports;
-    const arrResult = this.props.infoData.result.sort();
-    arrResult.forEach((elem) => {
-      this.tableData.push({
-        fs: airports[elem].fs || '',
-        name: airports[elem].name || '',
-        city: airports[elem].city || '',
-        cityCode: airports[elem].cityCode || '',
-        countryName: airports[elem].countryName || '',
-        regionName: airports[elem].regionName || '',
-        localTime: this.getDate(airports[elem].localTime),
-        latitude: airports[elem].latitude.toFixed(4) || '',
-        longitude: airports[elem].longitude.toFixed(4) || '',
-        active: airports[elem].active ? 1 : 0,
-      });
+    this.localArr = this.props.infoData.result.slice(0, 10);
+    const arrResult = this.localArr.sort();
+    this.tableData = this.getInitialDataTables(arrResult, airports);
+  }
+  getInitialDataTables(arrIndex, airports, flag = true) {
+    const tableData = [];
+    arrIndex.forEach((elem) => {
+      if (flag) {
+        tableData.push({
+          fs: airports[elem].fs || '',
+          name: airports[elem].name || '',
+          city: airports[elem].city || '',
+          cityCode: airports[elem].cityCode || '',
+          countryName: airports[elem].countryName || '',
+          regionName: airports[elem].regionName || '',
+          localTime: this.getDate(airports[elem].localTime),
+          latitude: airports[elem].latitude.toFixed(4) || '',
+          longitude: airports[elem].longitude.toFixed(4) || '',
+          active: airports[elem].active ? 1 : 0,
+        });
+      } else {
+        tableData.unshift({
+          fs: airports[elem].fs || '',
+          name: airports[elem].name || '',
+          city: airports[elem].city || '',
+          cityCode: airports[elem].cityCode || '',
+          countryName: airports[elem].countryName || '',
+          regionName: airports[elem].regionName || '',
+          localTime: this.getDate(airports[elem].localTime),
+          latitude: airports[elem].latitude.toFixed(4) || '',
+          longitude: airports[elem].longitude.toFixed(4) || '',
+          active: airports[elem].active ? 1 : 0,
+        });
+      }
     });
+    return tableData;
   }
   /**
    * Преобразование строкого представления даты к виду dd.mm.yyyy hh:mm
@@ -83,6 +105,8 @@ export default class Airports extends Component {
    */
   handleSortOrderChange(key, order) {
     console.log(`key: ${key} order: ${order}`);
+    this.setState({ fs: !this.state.fs });
+    this.tableData = this.getInitialDataTables(arrResult, airports, this.state.fs);
   }
   render() {
     return (
