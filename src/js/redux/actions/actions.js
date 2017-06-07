@@ -25,7 +25,7 @@ const responseData = (data = initialState, dispatch) => {
 // Загружаем переменную в память
 function loadJSONData(url, dispatch) {
   window.responseAirportsData = function responseAirportsData(data = initialState) {
-    const mySchema = new schema.Entity('airports',{},{ idAttribute: 'fs'});
+    const mySchema = new schema.Entity('airports', {}, { idAttribute: 'fs' });
     const listSchema = [mySchema];
     const normalizeData = normalize(data, listSchema);
     dispatch({

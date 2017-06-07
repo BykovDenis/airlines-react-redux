@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 // модуль комбинирования работы нескольких актшионов
 import { bindActionCreators } from 'redux';
-import RaisedButton from 'material-ui/RaisedButton';
 import * as getActionData from '../redux/actions/actions';
 // подгрузка компонентов
 import Button from '../components/button/button';
@@ -32,8 +31,6 @@ class ReactComponent extends Component {
             type: 'default'
           }}
         />
-        <br />
-        <RaisedButton label="Default" />
         <br />
         <Airpots infoData={this.props.currentStore.Reducer.airports} />
       </div>

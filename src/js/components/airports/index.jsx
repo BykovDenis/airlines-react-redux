@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import DataTables from 'material-ui-datatables';
+import * as settings from './airportsTableSetting';
 
 export default class Airports extends Component {
   static get defaultProps() {
@@ -28,43 +29,6 @@ export default class Airports extends Component {
    */
   getActualData() {
     this.styles = require('./airports.scss');
-    this.tableColumns = [
-      {
-        key: 'fs',
-        label: 'Fs'
-      }, {
-        key: 'name',
-        label: 'Name',
-        sortable: true,
-        className: this.styles.airports__cell,
-      }, {
-        key: 'city',
-        label: 'City',
-        sortable: true
-      }, {
-        key: 'cityCode',
-        label: 'City Code',
-        sortable: true
-      }, {
-        key: 'countryName',
-        label: 'Country Name'
-      }, {
-        key: 'regionName',
-        label: 'Region Name'
-      }, {
-        key: 'localTime',
-        label: 'Local Time'
-      }, {
-        key: 'latitude',
-        label: 'Lat'
-      }, {
-        key: 'longitude',
-        label: 'Lon'
-      }, {
-        key: 'active',
-        label: 'Active'
-      }
-    ];
     if (!this.props.infoData.result) {
       return;
     }
@@ -85,7 +49,9 @@ export default class Airports extends Component {
       });
     });
   }
-
+  eventsCellClick() {
+    console.log(this);
+  }
   /**
    * Преобразование строкого представления даты к виду dd.mm.yyyy hh:mm
    * @param dateString
@@ -109,17 +75,14 @@ export default class Airports extends Component {
           height={'auto'}
           selectable={false}
           showRowHover={true}
-          columns={this.tableColumns}
+          columns={settings.tableColumns}
           data={this.tableData}
           showCheckboxes={false}
-          onCellClick={this.handleCellClick}
-          onCellDoubleClick={this.handleCellDoubleClick}
-          onFilterValueChange={this.handleFilterValueChange}
-          onSortOrderChange={this.handleSortOrderChange}
-          rowSizeList={[10, 30, 100]}
+          rowSizeList={[10, 30, 100, 500]}
           page={1}
-          count={100}
+          count={1000}
           sortable={true}
+          handleCellClick={this.eventsCellClick}
         />
       </div>
     );
