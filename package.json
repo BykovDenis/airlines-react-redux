@@ -71,7 +71,7 @@
     "file-loader": "^0.11.1",
     "img-loader": "^2.0.0",
     "isomorphic-fetch": "^2.2.1",
-    "material-ui": "^0.18.1",
+    "material-ui": "^0.18.2",
     "material-ui-datatables": "^0.18.0",
     "node-sass": "^4.5.2",
     "normalizr": "^3.2.3",

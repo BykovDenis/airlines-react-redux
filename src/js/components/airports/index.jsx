@@ -17,13 +17,17 @@ export default class Airports extends Component {
       infoData: PropTypes.object.isRequired
     };
   }
+  constructor(props) {
+    super(props);
+    this.handleCellClick = this.handleCellClick.bind(this);
+    this.handleSortOrderChange = this.handleSortOrderChange.bind(this);
+  }
   componentWillMount() {
     this.getActualData();
   }
   componentWillReceiveProps() {
     this.getActualData();
   }
-
   /**
    * Инициализация табличного представления
    */
@@ -49,15 +53,11 @@ export default class Airports extends Component {
       });
     });
   }
-  eventsCellClick() {
-    console.log(this);
-  }
   /**
    * Преобразование строкого представления даты к виду dd.mm.yyyy hh:mm
    * @param dateString
    * @returns {string}
    */
-
   getDate(dateString) {
     const date = new Date(dateString);
     const year = date.getUTCFullYear();
@@ -67,6 +67,22 @@ export default class Airports extends Component {
     const minutes = date.getUTCMinutes() < 10 ? `0${date.getUTCMinutes()}` : date.getUTCMinutes();
     return `${dateOfMonth}.${month}.${year} ${hours}:${minutes}`;
   }
+  /**
+   * Обработка клика по ячейке
+   * @param rowIndex
+   * @param columnIndex
+   */
+  handleCellClick(rowIndex, columnIndex) {
+    console.log(`rowIndex: ${rowIndex} columnIndex: ${columnIndex}`);
+  }
+  /**
+   * Обработка клика сортировки данных
+   * @param key
+   * @param order
+   */
+  handleSortOrderChange(key, order) {
+    console.log(`key: ${key} order: ${order}`);
+  }
   render() {
     return (
       <div>
@@ -75,14 +91,15 @@ export default class Airports extends Component {
           height={'auto'}
           selectable={false}
           showRowHover={true}
-          columns={settings.tableColumns}
+          columns={settings.tableColumnsSortStyle}
           data={this.tableData}
           showCheckboxes={false}
           rowSizeList={[10, 30, 100, 500]}
           page={1}
           count={1000}
           sortable={true}
-          handleCellClick={this.eventsCellClick}
+          onCellClick={this.handleCellClick}
+          onSortOrderChange={this.handleSortOrderChange}
         />
       </div>
     );
