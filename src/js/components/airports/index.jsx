@@ -37,15 +37,14 @@ export default class Airports extends Component {
     if (!this.props.infoData.result) {
       return;
     }
-    this.tableData = [];
-    const airports = this.props.infoData.entities.airports;
-    this.localArr = this.props.infoData.result.slice(0, 10);
-    const arrResult = this.localArr.sort();
-    this.tableData = this.getInitialDataTables(arrResult, airports);
+    this.tableData = this.getInitialDataTables();
   }
-  getInitialDataTables(arrIndex, airports, flag = true) {
+  getInitialDataTables(flag = true) {
+    const airports = this.props.infoData.entities.airports;
+    const arrIndex = this.props.infoData.result.slice(0, 10);
+    const arrResult = arrIndex.sort();
     const tableData = [];
-    arrIndex.forEach((elem) => {
+    arrResult.forEach((elem) => {
       if (flag) {
         tableData.push({
           fs: airports[elem].fs || '',
@@ -106,7 +105,7 @@ export default class Airports extends Component {
   handleSortOrderChange(key, order) {
     console.log(`key: ${key} order: ${order}`);
     this.setState({ fs: !this.state.fs });
-    this.tableData = this.getInitialDataTables(arrResult, airports, this.state.fs);
+    this.tableData = this.getInitialDataTables(this.state.fs);
   }
   render() {
     return (

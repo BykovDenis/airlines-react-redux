@@ -9,7 +9,7 @@ import initialState from '../initialState/initialState';
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-const timeout = 15000;
+const timeout = 150000;
 
 const urls = {
   getAiports: `https://api.flightstats.com/flex/airports/rest/v1/jsonp/countryCode/${initialState.country}?callback=responseAirportsData&appId=${initialState.appid}&appKey=${initialState.apikey}`
