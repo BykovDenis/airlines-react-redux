@@ -22,8 +22,6 @@ class ReactComponent extends Component {
     this.props.getData.getAirportsData();
   }
   render() {
-    this.i = 2;
-    console.log(this.i);
     return (
       <div>
         custom component
