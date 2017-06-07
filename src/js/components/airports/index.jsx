@@ -38,7 +38,8 @@ export default class Airports extends Component {
     }
     this.tableData = [];
     const airports = this.props.infoData.entities.airports;
-    Object.keys(airports).forEach((elem) => {
+    const arrResult = this.props.infoData.result.sort();
+    arrResult.forEach((elem) => {
       this.tableData.push({
         fs: airports[elem].fs || '',
         name: airports[elem].name || '',

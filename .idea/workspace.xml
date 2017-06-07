@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f7ffe51-559b-4f80-acff-21f1e4223c13" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/airports/index.jsx" afterPath="$PROJECT_DIR$/src/js/components/airports/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.jsx" afterPath="$PROJECT_DIR$/src/js/index.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,12 +21,12 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/components/airports/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="76" column="3" lean-forward="false" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
+            <state relative-caret-position="378">
+              <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
               <folding>
                 <element signature="e#43#84#0" expanded="true" />
-                <marker date="1496851688412" expanded="true" signature="2696:3182" ph="..." />
-                <marker date="1496851688412" expanded="true" signature="2745:3169" ph="..." />
+                <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
+                <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
               </folding>
             </state>
           </provider>
@@ -463,12 +461,12 @@
       <workItem from="1496690410654" duration="402000" />
       <workItem from="1496761808578" duration="4137000" />
       <workItem from="1496841914239" duration="19000" />
-      <workItem from="1496842903985" duration="8530000" />
+      <workItem from="1496842903985" duration="9621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19077000" />
+    <option name="totallyTimeSpent" value="20168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="0" />
@@ -480,7 +478,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16505896" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38049304" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -537,8 +535,8 @@
           <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496851688412" expanded="true" signature="2696:3182" ph="..." />
-            <marker date="1496851688412" expanded="true" signature="2745:3169" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
           </folding>
         </state>
       </provider>
@@ -610,8 +608,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496851688412" expanded="true" signature="2696:3182" ph="..." />
-            <marker date="1496851688412" expanded="true" signature="2745:3169" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
           </folding>
         </state>
       </provider>
@@ -665,8 +663,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496851688412" expanded="true" signature="2696:3182" ph="..." />
-            <marker date="1496851688412" expanded="true" signature="2745:3169" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
           </folding>
         </state>
       </provider>
@@ -780,8 +778,8 @@
           <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496851688412" expanded="true" signature="2696:3182" ph="..." />
-            <marker date="1496851688412" expanded="true" signature="2745:3169" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
           </folding>
         </state>
       </provider>
@@ -919,12 +917,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/airports/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="76" column="3" lean-forward="false" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
+        <state relative-caret-position="378">
+          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
-            <marker date="1496851688412" expanded="true" signature="2696:3182" ph="..." />
-            <marker date="1496851688412" expanded="true" signature="2745:3169" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2741:3227" ph="..." />
+            <marker date="1496852803266" expanded="true" signature="2790:3214" ph="..." />
           </folding>
         </state>
       </provider>
