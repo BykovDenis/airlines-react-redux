@@ -7,7 +7,7 @@ import DataTables from 'material-ui-datatables';
 import * as settings from './airportsTableSetting';
 import CustomDate from './../../helpers/custom-date';
 
-export default class Airports extends Component {
+export default class DataTableAirports extends Component {
   static get defaultProps() {
     return {
       infoData: {}

@@ -7,7 +7,7 @@ import DataTables from 'material-ui-datatables';
 import tableColumns from './arrival-table-settings';
 import CustomDate from './../../helpers/custom-date';
 
-export default class SheduleArrival extends Component {
+export default class DataTableSheduleArrival extends Component {
   static get defaultProps() {
     return {
       infoData: {}
