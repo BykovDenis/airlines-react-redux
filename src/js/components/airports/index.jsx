@@ -9,7 +9,7 @@ import * as settings from './airportsTableSetting';
 export default class Airports extends Component {
   static get defaultProps() {
     return {
-      infoData: []
+      infoData: {}
     };
   }
   static get propTypes() {
@@ -23,7 +23,7 @@ export default class Airports extends Component {
     this.handleSortOrderChange = this.handleSortOrderChange.bind(this);
     this.state = { fs: true };
   }
-  componentWillMount() {
+  componentDidMount() {
     this.getActualData();
   }
   componentWillReceiveProps() {
@@ -42,7 +42,7 @@ export default class Airports extends Component {
   getInitialDataTables(flag = true) {
     const airports = this.props.infoData.entities.airports;
     const localArr = this.props.infoData.result;
-    const arrIndex = (localArr.slice(0, 10)).sort();
+    const arrIndex = localArr.sort();
     const tableData = [];
     arrIndex.forEach((elem) => {
       if (flag) {

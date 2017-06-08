@@ -16,9 +16,11 @@ class ReactComponent extends Component {
       currentStore: PropTypes.object.isRequired,
     };
   }
-  componentWillMount() {
+  componentDidMount() {
     this.props.getData.getActionData();
     this.props.getData.getAirportsData();
+    this.props.getData.getDepartingData();
+    this.props.getData.getArrivingData();
   }
   render() {
     return (
