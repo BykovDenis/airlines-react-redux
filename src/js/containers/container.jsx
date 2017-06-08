@@ -7,6 +7,8 @@ import * as getActionData from '../redux/actions/actions';
 // подгрузка компонентов
 import Button from '../components/button/button';
 import Airpots from '../components/airports/';
+import SheduleArrival from '../components/shedule-arrival/';
+import SheduleDeparture from '../components/shedule-departure/';
 
 
 class ReactComponent extends Component {
@@ -23,6 +25,9 @@ class ReactComponent extends Component {
     this.props.getData.getArrivingData();
   }
   render() {
+    const airports = this.props.currentStore.Reducer.airports;
+    const arriving = this.props.currentStore.Reducer.shedules.arriving;
+    const departing = this.props.currentStore.Reducer.shedules.departing;
     return (
       <div>
         custom component
@@ -34,7 +39,9 @@ class ReactComponent extends Component {
           }}
         />
         <br />
-        <Airpots infoData={this.props.currentStore.Reducer.airports} />
+        <SheduleArrival infoData={arriving} />
+        <SheduleDeparture infoData={departing} />
+        <Airpots infoData={airports} />
       </div>
     );
   }
