@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f7ffe51-559b-4f80-acff-21f1e4223c13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/components/shedule-arrival/arrival-table-settings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/components/shedule-arrival/index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/components/shedule-arrival/shedule-arrival.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/components/shedule-departure/departure-table-settings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/components/shedule-departure/index.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/components/shedule-departure/shedule-departure.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/helpers/custom-date.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/components/button/button.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/components/button/button.scss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/airports/index.jsx" afterPath="$PROJECT_DIR$/src/js/components/airports/index.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/container.jsx" afterPath="$PROJECT_DIR$/src/js/containers/container.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/redux/actions/actions.js" afterPath="$PROJECT_DIR$/src/js/redux/actions/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/redux/constants/constants.js" afterPath="$PROJECT_DIR$/src/js/redux/constants/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/redux/initialState/initialState.js" afterPath="$PROJECT_DIR$/src/js/redux/initialState/initialState.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +38,31 @@
       <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/components/shedule-departure/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
+            <state relative-caret-position="84">
               <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/redux/actions/actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#43#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/redux/constants/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,8 +71,8 @@
       <file leaf-file-name="initialState.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/redux/initialState/initialState.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="84">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,11 +93,11 @@
       <file leaf-file-name="container.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/containers/container.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+            <state relative-caret-position="189">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#170#213#0" expanded="true" />
-                <element signature="e#298#347#0" expanded="true" />
+                <element signature="e#298#344#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,10 +170,7 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/api/shedules_departure.js" />
         <option value="$PROJECT_DIR$/src/api/shedules_arriving.js" />
-        <option value="$PROJECT_DIR$/src/js/redux/initialState/initialState.js" />
-        <option value="$PROJECT_DIR$/src/js/redux/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/js/redux/reducers/reducer.js" />
-        <option value="$PROJECT_DIR$/src/js/redux/actions/actions.js" />
         <option value="$PROJECT_DIR$/src/js/components/arriving/index.jsx.js" />
         <option value="$PROJECT_DIR$/src/js/components/arriving/arriving.scss" />
         <option value="$PROJECT_DIR$/src/js/components/arriving/arriving-table-setting.js" />
@@ -166,7 +183,10 @@
         <option value="$PROJECT_DIR$/src/js/components/shedule-departure/departure-table-settings.js" />
         <option value="$PROJECT_DIR$/src/js/components/shedule-departure/shedule-departure.scss" />
         <option value="$PROJECT_DIR$/src/js/components/shedule-departure/index.jsx" />
+        <option value="$PROJECT_DIR$/src/js/redux/initialState/initialState.js" />
         <option value="$PROJECT_DIR$/src/js/containers/container.jsx" />
+        <option value="$PROJECT_DIR$/src/js/redux/actions/actions.js" />
+        <option value="$PROJECT_DIR$/src/js/redux/constants/constants.js" />
       </list>
     </option>
   </component>
@@ -290,6 +310,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="initialState" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airlines-react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="airlines-react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constants" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,15 +598,16 @@
       <workItem from="1496841914239" duration="19000" />
       <workItem from="1496842903985" duration="12174000" />
       <workItem from="1496909537920" duration="4931000" />
-      <workItem from="1496916227688" duration="10175000" />
+      <workItem from="1496916227688" duration="10426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37827000" />
+    <option name="totallyTimeSpent" value="38078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="17" width="1938" height="1098" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24907456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -568,7 +615,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28938907" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28938907" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -608,7 +655,7 @@
           <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
           <folding>
             <element signature="e#170#213#0" expanded="true" />
-            <element signature="e#298#347#0" expanded="true" />
+            <element signature="e#298#344#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -661,7 +708,7 @@
           <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
           <folding>
             <element signature="e#170#213#0" expanded="true" />
-            <element signature="e#298#347#0" expanded="true" />
+            <element signature="e#298#344#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,7 +784,7 @@
           <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
           <folding>
             <element signature="e#170#213#0" expanded="true" />
-            <element signature="e#298#347#0" expanded="true" />
+            <element signature="e#298#344#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -778,7 +825,7 @@
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#170#213#0" expanded="true" />
-            <element signature="e#298#347#0" expanded="true" />
+            <element signature="e#298#344#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -854,14 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/redux/constants/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/redux/reducers/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -928,17 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/redux/actions/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="93" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="93" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/shedule-arrival/arrival-table-settings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -985,29 +1013,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/redux/initialState/initialState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/shedule-departure/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
+        <state relative-caret-position="84">
           <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/redux/initialState/initialState.js">
+    <entry file="file://$PROJECT_DIR$/src/js/redux/actions/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="300">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/redux/constants/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/containers/container.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        <state relative-caret-position="189">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#170#213#0" expanded="true" />
-            <element signature="e#298#347#0" expanded="true" />
+            <element signature="e#298#344#0" expanded="true" />
           </folding>
         </state>
       </provider>

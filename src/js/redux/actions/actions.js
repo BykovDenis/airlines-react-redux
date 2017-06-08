@@ -17,13 +17,6 @@ const urls = {
   getArriving: `https://api.flightstats.com/flex/schedules/rest/v1/jsonp/to/SVO/arriving/2017/06/08/12?callback=responseArrivingData&appId=68c7b8b1&appKey=${initialState.apikey}`
 };
 
-const responseData = (data = initialState, dispatch) => {
-  dispatch({
-    type: constants.GET_DATA,
-    payload: data
-  });
-};
-
 /**
  * Получение данных по аэропортам
  * @param url
@@ -112,10 +105,6 @@ function loadJSONPArrivingData(url, dispatch) {
     })
     .catch(e => console.log(e));
 }
-
-export const getActionData = () => (dispatch) => {
-  responseData(initialState, dispatch);
-};
 
 export const getAirportsData = () => (dispatch) => {
   loadJSONPAirportsData(urls.getAiports, dispatch);
