@@ -5,11 +5,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import DataTables from 'material-ui-datatables';
 import * as settings from './airportsTableSetting';
+import CustomDate from './../../helpers/custom-date';
 
-export default class Airports extends Component {
+export default class DataTableAirports extends Component {
   static get defaultProps() {
     return {
-      infoData: []
+      infoData: {}
     };
   }
   static get propTypes() {
@@ -23,7 +24,7 @@ export default class Airports extends Component {
     this.handleSortOrderChange = this.handleSortOrderChange.bind(this);
     this.state = { fs: true };
   }
-  componentWillMount() {
+  componentDidMount() {
     this.getActualData();
   }
   componentWillReceiveProps() {
@@ -37,14 +38,15 @@ export default class Airports extends Component {
     if (!this.props.infoData.result) {
       return;
     }
-    this.tableData = this.getInitialDataTables();
+    this.tableData = this.getInitialDataTables(this.state.fs);
   }
   getInitialDataTables(flag = true) {
     const airports = this.props.infoData.entities.airports;
-    const arrIndex = this.props.infoData.result.slice(0, 10);
-    const arrResult = arrIndex.sort();
+    const localArr = this.props.infoData.result;
+    const arrIndex = (localArr.slice(0, 10)).sort();
     const tableData = [];
-    arrResult.forEach((elem) => {
+    const objDate = new CustomDate();
+    arrIndex.forEach((elem) => {
       if (flag) {
         tableData.push({
           fs: airports[elem].fs || '',
@@ -53,7 +55,7 @@ export default class Airports extends Component {
           cityCode: airports[elem].cityCode || '',
           countryName: airports[elem].countryName || '',
           regionName: airports[elem].regionName || '',
-          localTime: this.getDate(airports[elem].localTime),
+          localTime: objDate.getDateDDMMYYYYHHMM(airports[elem].localTime),
           latitude: airports[elem].latitude.toFixed(4) || '',
           longitude: airports[elem].longitude.toFixed(4) || '',
           active: airports[elem].active ? 1 : 0,
@@ -74,20 +76,6 @@ export default class Airports extends Component {
       }
     });
     return tableData;
-  }
-  /**
-   * Преобразование строкого представления даты к виду dd.mm.yyyy hh:mm
-   * @param dateString
-   * @returns {string}
-   */
-  getDate(dateString) {
-    const date = new Date(dateString);
-    const year = date.getUTCFullYear();
-    const month = (date.getUTCMonth() + 1) < 10 ? `0${date.getUTCMonth() + 1}` : date.getUTCMonth();
-    const dateOfMonth = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
-    const hours = date.getUTCHours() < 10 ? `0${date.getUTCHours()}` : date.getUTCHours();
-    const minutes = date.getUTCMinutes() < 10 ? `0${date.getUTCMinutes()}` : date.getUTCMinutes();
-    return `${dateOfMonth}.${month}.${year} ${hours}:${minutes}`;
   }
   /**
    * Обработка клика по ячейке

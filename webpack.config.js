@@ -122,7 +122,7 @@ module.exports = {
     new CopyWebpackPlugin([{
       context: __dirname + '/src/api',
       from: '**/*',
-      to: 'themes/owm/assets/data/'
+      to: 'data/'
     }]),
     new webpack.LoaderOptionsPlugin({
       debug: true
