@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f7ffe51-559b-4f80-acff-21f1e4223c13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/api/response-airports-data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/api/shedules_arriving.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/api/shedules_departing.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/airports/index.jsx" afterPath="$PROJECT_DIR$/src/js/components/airports/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/containers/container.jsx" afterPath="$PROJECT_DIR$/src/js/containers/container.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/redux/actions/actions.js" afterPath="$PROJECT_DIR$/src/js/redux/actions/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/redux/constants/constants.js" afterPath="$PROJECT_DIR$/src/js/redux/constants/constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/redux/initialState/initialState.js" afterPath="$PROJECT_DIR$/src/js/redux/initialState/initialState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/redux/reducers/reducer.js" afterPath="$PROJECT_DIR$/src/js/redux/reducers/reducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/redux/actions/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1531">
-              <caret line="16" column="132" lean-forward="false" selection-start-line="16" selection-start-column="132" selection-end-line="16" selection-end-column="132" />
+            <state relative-caret-position="446">
+              <caret line="108" column="36" lean-forward="false" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#43#89#0" expanded="true" />
@@ -50,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/redux/reducers/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="546">
@@ -58,6 +49,26 @@
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="124" column="11" lean-forward="false" selection-start-line="124" selection-start-column="11" selection-end-line="124" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shedules_arriving.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/shedules_arriving.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="2294" column="1" lean-forward="false" selection-start-line="2294" selection-start-column="1" selection-end-line="2294" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,9 +155,9 @@
         <option value="$PROJECT_DIR$/src/js/components/airports/index.jsx" />
         <option value="$PROJECT_DIR$/src/js/redux/initialState/initialState.js" />
         <option value="$PROJECT_DIR$/src/js/containers/container.jsx" />
-        <option value="$PROJECT_DIR$/src/js/redux/actions/actions.js" />
         <option value="$PROJECT_DIR$/src/js/redux/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/js/redux/reducers/reducer.js" />
+        <option value="$PROJECT_DIR$/src/js/redux/actions/actions.js" />
       </list>
     </option>
   </component>
@@ -160,8 +171,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-8" />
+    <option name="y" value="17" />
     <option name="width" value="1938" />
     <option name="height" value="1098" />
   </component>
@@ -558,15 +569,15 @@
       <workItem from="1496841914239" duration="19000" />
       <workItem from="1496842903985" duration="12174000" />
       <workItem from="1496909537920" duration="4931000" />
-      <workItem from="1496916227688" duration="5080000" />
+      <workItem from="1496916227688" duration="5861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32732000" />
+    <option name="totallyTimeSpent" value="33513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="0" />
+    <frame x="-8" y="17" width="1938" height="1098" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24907456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -575,7 +586,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29046088" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3129689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -903,26 +914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2604">
-          <caret line="124" column="11" lean-forward="false" selection-start-line="124" selection-start-column="11" selection-end-line="124" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/api/response-airports-data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="4001" column="18" lean-forward="false" selection-start-line="4001" selection-start-column="13" selection-end-line="4001" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/shedules_arriving.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="2294" column="1" lean-forward="false" selection-start-line="2294" selection-start-column="1" selection-end-line="2294" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -982,23 +977,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/redux/actions/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1531">
-          <caret line="16" column="132" lean-forward="false" selection-start-line="16" selection-start-column="132" selection-end-line="16" selection-end-column="132" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/redux/reducers/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/shedules_arriving.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="2294" column="1" lean-forward="false" selection-start-line="2294" selection-start-column="1" selection-end-line="2294" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="124" column="11" lean-forward="false" selection-start-line="124" selection-start-column="11" selection-end-line="124" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/redux/actions/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="108" column="36" lean-forward="false" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#89#0" expanded="true" />
           </folding>
         </state>
       </provider>

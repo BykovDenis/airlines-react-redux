@@ -57,10 +57,12 @@ function loadJSONPAirportsData(url, dispatch) {
         type: constants.GET_AIRPORTS,
         payload: normalizeData
       });
-    });
+    })
+    .catch(e => console.log(e));
 }
 
 function loadJSONPDepartingData(url, dispatch) {
+  /*
   window.responseDepartingData = function responseDepartingData(data = initialState) {
     dispatch({
       type: constants.GET_DEPARTING,
@@ -70,9 +72,23 @@ function loadJSONPDepartingData(url, dispatch) {
   const script = document.createElement('script');
   script.src = url;
   document.body.appendChild(script);
+  */
+  // for test import data from local api
+  // Блок с данными от сервера, для тестирования чтобы не нагружать канал
+  console.log(url);
+  fetch('http://localhost:8080/data/shedules_departing.json')
+    .then(response => response.json())
+    .then((data) => {
+      dispatch({
+        type: constants.GET_DEPARTING,
+        payload: data
+      });
+    })
+    .catch(e => console.log(e));
 }
 
 function loadJSONPArrivingData(url, dispatch) {
+  /*
   window.responseArrivingData = function responseArrivingData(data = initialState) {
     dispatch({
       type: constants.GET_ARRIVING,
@@ -82,6 +98,19 @@ function loadJSONPArrivingData(url, dispatch) {
   const script = document.createElement('script');
   script.src = url;
   document.body.appendChild(script);
+  */
+  // for test import data from local api
+  // Блок с данными от сервера, для тестирования чтобы не нагружать канал
+  console.log(url);
+  fetch('http://localhost:8080/data/shedules_arriving.json')
+    .then(response => response.json())
+    .then((data) => {
+      dispatch({
+        type: constants.GET_ARRIVING,
+        payload: data
+      });
+    })
+    .catch(e => console.log(e));
 }
 
 export const getActionData = () => (dispatch) => {
