@@ -23,12 +23,12 @@ class ShedulesDeparture extends Component {
     this.props.getData.getDepartingData();
   }
   render() {
-    const departing = this.props.currentStore.Reducer.shedules.departing;
     const muiTheme = getMuiTheme({
       palette: {
         accent1Color: deepOrange500,
       },
     });
+    const departing = this.props.currentStore.Reducer.shedules.departing;
     return (
       <div>
         <MainNav />

@@ -25,12 +25,12 @@ class Airports extends Component {
     this.props.getData.getAirportsData();
   }
   render() {
-    const airports = this.props.currentStore.Reducer.airports;
     const muiTheme = getMuiTheme({
       palette: {
         accent1Color: deepOrange500,
       },
     });
+    const airports = this.props.currentStore.Reducer.airports;
     return (
       <div>
         <MainNav />

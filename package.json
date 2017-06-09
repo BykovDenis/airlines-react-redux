@@ -1,20 +1,22 @@
 {
-  "name": "react_simple",
-  "version": "1.0.0",
+  "name": "airlines_shedules",
+  "version": "0.0.1b",
   "description": "Сборка для разработки компонентов в стеке webpack react redux",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BykovDenis/weather-widget-react-custom-build"
+    "url": "https://github.com/BykovDenis/airlines-react-redux"
   },
-  "homepage": "https://github.com/BykovDenis/weather-widget-react-custom-build",
+  "homepage": "https://github.com/BykovDenis/airlines-react-redux",
   "keywords": [
     "react",
+    "react-router",
     "redux",
     "webpack",
     "babel",
     "scss",
-    "jade"
+    "jade",
+    "material-ui"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
