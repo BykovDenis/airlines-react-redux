@@ -1,0 +1,734 @@
+{
+  "request": {
+  "airport": {
+    "requestedCode": "SVO",
+      "fsCode": "SVO"
+  },
+  "codeType": {},
+  "departing": true,
+    "date": {
+    "year": "2017",
+      "month": "6",
+      "day": "8",
+      "interpreted": "2017-06-08"
+  },
+  "hourOfDay": {
+    "requested": "12",
+      "interpreted": 12
+  },
+  "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/from/SVO/departing/2017/06/08/12"
+},
+  "scheduledFlights": [
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "1122",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "AER",
+    "stops": 0,
+    "departureTerminal": "D",
+    "departureTime": "2017-06-08T12:35:00.000",
+    "arrivalTime": "2017-06-08T15:05:00.000",
+    "flightEquipmentIataCode": "73H",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [
+      {
+        "carrierFsCode": "KL",
+        "flightNumber": "3192",
+        "serviceType": "J",
+        "serviceClasses": [
+          "R",
+          "F",
+          "J",
+          "Y"
+        ],
+        "trafficRestrictions": [
+          "G"
+        ],
+        "referenceCode": 3687441
+      }
+    ],
+    "referenceCode": "148-3687263--"
+  },
+  {
+    "carrierFsCode": "KL",
+    "flightNumber": "3192",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "AER",
+    "stops": 0,
+    "departureTerminal": "D",
+    "departureTime": "2017-06-08T12:35:00.000",
+    "arrivalTime": "2017-06-08T15:05:00.000",
+    "flightEquipmentIataCode": "73H",
+    "isCodeshare": true,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [
+      "G"
+    ],
+    "operator": {
+      "carrierFsCode": "SU",
+      "flightNumber": "1122",
+      "serviceType": "J",
+      "serviceClasses": [
+        "R",
+        "F",
+        "J",
+        "Y"
+      ],
+      "trafficRestrictions": []
+    },
+    "codeshares": [],
+    "referenceCode": "148-3687263--3687441"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "2514",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "BCN",
+    "stops": 0,
+    "departureTerminal": "D",
+    "arrivalTerminal": "1",
+    "departureTime": "2017-06-08T12:10:00.000",
+    "arrivalTime": "2017-06-08T15:40:00.000",
+    "flightEquipmentIataCode": "32B",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [
+      {
+        "carrierFsCode": "UX",
+        "flightNumber": "3245",
+        "serviceType": "J",
+        "serviceClasses": [
+          "R",
+          "F",
+          "J",
+          "Y"
+        ],
+        "trafficRestrictions": [],
+        "referenceCode": 11539647
+      }
+    ],
+    "referenceCode": "148-3687841--"
+  },
+  {
+    "carrierFsCode": "UX",
+    "flightNumber": "3245",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "BCN",
+    "stops": 0,
+    "departureTerminal": "D",
+    "arrivalTerminal": "1",
+    "departureTime": "2017-06-08T12:10:00.000",
+    "arrivalTime": "2017-06-08T15:40:00.000",
+    "flightEquipmentIataCode": "32B",
+    "isCodeshare": true,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "operator": {
+      "carrierFsCode": "SU",
+      "flightNumber": "2514",
+      "serviceType": "J",
+      "serviceClasses": [
+        "R",
+        "J",
+        "Y"
+      ],
+      "trafficRestrictions": []
+    },
+    "codeshares": [],
+    "referenceCode": "148-3687841--11539647"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "1102",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "KRR",
+    "stops": 0,
+    "departureTerminal": "D",
+    "departureTime": "2017-06-08T12:20:00.000",
+    "arrivalTime": "2017-06-08T14:45:00.000",
+    "flightEquipmentIataCode": "32A",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [
+      {
+        "carrierFsCode": "KL",
+        "flightNumber": "3062",
+        "serviceType": "J",
+        "serviceClasses": [
+          "R",
+          "F",
+          "J",
+          "Y"
+        ],
+        "trafficRestrictions": [
+          "G"
+        ],
+        "referenceCode": 3689616
+      }
+    ],
+    "referenceCode": "148-3689606--"
+  },
+  {
+    "carrierFsCode": "KL",
+    "flightNumber": "3062",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "KRR",
+    "stops": 0,
+    "departureTerminal": "D",
+    "departureTime": "2017-06-08T12:20:00.000",
+    "arrivalTime": "2017-06-08T14:45:00.000",
+    "flightEquipmentIataCode": "32A",
+    "isCodeshare": true,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [
+      "G"
+    ],
+    "operator": {
+      "carrierFsCode": "SU",
+      "flightNumber": "1102",
+      "serviceType": "J",
+      "serviceClasses": [
+        "R",
+        "F",
+        "J",
+        "Y"
+      ],
+      "trafficRestrictions": []
+    },
+    "codeshares": [],
+    "referenceCode": "148-3689606--3689616"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "42",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "LED",
+    "stops": 0,
+    "departureTerminal": "D",
+    "arrivalTerminal": "1",
+    "departureTime": "2017-06-08T12:00:00.000",
+    "arrivalTime": "2017-06-08T13:20:00.000",
+    "flightEquipmentIataCode": "320",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [],
+    "referenceCode": "148-3689934--"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "18",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "LED",
+    "stops": 0,
+    "departureTerminal": "D",
+    "arrivalTerminal": "1",
+    "departureTime": "2017-06-08T12:55:00.000",
+    "arrivalTime": "2017-06-08T14:15:00.000",
+    "flightEquipmentIataCode": "320",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [],
+    "referenceCode": "148-3690158--"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "200",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "PEK",
+    "stops": 0,
+    "departureTerminal": "F",
+    "arrivalTerminal": "2",
+    "departureTime": "2017-06-08T12:25:00.000",
+    "arrivalTime": "2017-06-09T01:00:00.000",
+    "flightEquipmentIataCode": "333",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [],
+    "referenceCode": "148-3691185--"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "2100",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "RIX",
+    "stops": 0,
+    "departureTerminal": "D",
+    "departureTime": "2017-06-08T12:50:00.000",
+    "arrivalTime": "2017-06-08T14:30:00.000",
+    "flightEquipmentIataCode": "SU9",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [
+      {
+        "carrierFsCode": "BT",
+        "flightNumber": "7427",
+        "serviceType": "J",
+        "serviceClasses": [
+          "F",
+          "J",
+          "Y"
+        ],
+        "trafficRestrictions": [],
+        "referenceCode": 3691561
+      }
+    ],
+    "referenceCode": "148-3691546--"
+  },
+  {
+    "carrierFsCode": "BT",
+    "flightNumber": "7427",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "RIX",
+    "stops": 0,
+    "departureTerminal": "D",
+    "departureTime": "2017-06-08T12:50:00.000",
+    "arrivalTime": "2017-06-08T14:30:00.000",
+    "flightEquipmentIataCode": "SU9",
+    "isCodeshare": true,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "operator": {
+      "carrierFsCode": "SU",
+      "flightNumber": "2100",
+      "serviceType": "J",
+      "serviceClasses": [
+        "R",
+        "J",
+        "Y"
+      ],
+      "trafficRestrictions": []
+    },
+    "codeshares": [],
+    "referenceCode": "148-3691546--3691561"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "1648",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "SIP",
+    "stops": 0,
+    "departureTerminal": "D",
+    "arrivalTerminal": "A",
+    "departureTime": "2017-06-08T12:45:00.000",
+    "arrivalTime": "2017-06-08T15:25:00.000",
+    "flightEquipmentIataCode": "32A",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [],
+    "referenceCode": "148-3691731--"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "508",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "TLV",
+    "stops": 0,
+    "departureTerminal": "D",
+    "arrivalTerminal": "3",
+    "departureTime": "2017-06-08T12:50:00.000",
+    "arrivalTime": "2017-06-08T17:05:00.000",
+    "flightEquipmentIataCode": "333",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [],
+    "referenceCode": "148-3692224--"
+  },
+  {
+    "carrierFsCode": "SU",
+    "flightNumber": "2356",
+    "departureAirportFsCode": "SVO",
+    "arrivalAirportFsCode": "VIE",
+    "stops": 0,
+    "departureTerminal": "E",
+    "departureTime": "2017-06-08T12:25:00.000",
+    "arrivalTime": "2017-06-08T14:05:00.000",
+    "flightEquipmentIataCode": "320",
+    "isCodeshare": false,
+    "isWetlease": false,
+    "serviceType": "J",
+    "serviceClasses": [
+      "R",
+      "J",
+      "Y"
+    ],
+    "trafficRestrictions": [],
+    "codeshares": [],
+    "referenceCode": "148-3692469--"
+  }
+],
+  "appendix": {
+  "airlines": [
+    {
+      "fs": "KL",
+      "iata": "KL",
+      "icao": "KLM",
+      "name": "KLM",
+      "phoneNumber": "1-800-447-4747",
+      "active": true
+    },
+    {
+      "fs": "SU",
+      "iata": "SU",
+      "icao": "AFL",
+      "name": "Aeroflot",
+      "phoneNumber": "+7 495 223-55-55",
+      "active": true
+    },
+    {
+      "fs": "UX",
+      "iata": "UX",
+      "icao": "AEA",
+      "name": "Air Europa",
+      "phoneNumber": "1.800.238.7672",
+      "active": true
+    },
+    {
+      "fs": "BT",
+      "iata": "BT",
+      "icao": "BTI",
+      "name": "Air Baltic",
+      "active": true
+    }
+  ],
+    "airports": [
+    {
+      "fs": "RIX",
+      "iata": "RIX",
+      "icao": "EVRA",
+      "name": "Riga International Airport",
+      "city": "Riga",
+      "cityCode": "RIX",
+      "countryCode": "LV",
+      "countryName": "Latvia",
+      "regionName": "Europe",
+      "timeZoneRegionName": "Europe/Riga",
+      "localTime": "2017-06-08T13:13:25.237",
+      "utcOffsetHours": 3,
+      "latitude": 56.92208,
+      "longitude": 23.979806,
+      "elevationFeet": 34,
+      "classification": 2,
+      "active": true
+    },
+    {
+      "fs": "KRR",
+      "iata": "KRR",
+      "icao": "URKK",
+      "name": "Krasnodar International Airport",
+      "city": "Krasnodar",
+      "cityCode": "KRR",
+      "countryCode": "RU",
+      "countryName": "Russian Federation",
+      "regionName": "Europe",
+      "timeZoneRegionName": "Europe/Moscow",
+      "localTime": "2017-06-08T13:13:25.237",
+      "utcOffsetHours": 3,
+      "latitude": 45.034138,
+      "longitude": 39.139002,
+      "elevationFeet": 118,
+      "classification": 3,
+      "active": true
+    },
+    {
+      "fs": "LED",
+      "iata": "LED",
+      "icao": "ULLI",
+      "name": "Pulkovo Airport",
+      "city": "Saint Petersburg",
+      "cityCode": "LED",
+      "countryCode": "RU",
+      "countryName": "Russian Federation",
+      "regionName": "Europe",
+      "timeZoneRegionName": "Europe/Moscow",
+      "localTime": "2017-06-08T13:13:25.237",
+      "utcOffsetHours": 3,
+      "latitude": 59.799847,
+      "longitude": 30.270505,
+      "elevationFeet": 76,
+      "classification": 2,
+      "active": true
+    },
+    {
+      "fs": "BCN",
+      "iata": "BCN",
+      "icao": "LEBL",
+      "name": "Barcelona-El Prat Airport",
+      "city": "Barcelona",
+      "cityCode": "BCN",
+      "stateCode": "SP",
+      "countryCode": "ES",
+      "countryName": "Spain and Canary Islands",
+      "regionName": "Europe",
+      "timeZoneRegionName": "Europe/Madrid",
+      "localTime": "2017-06-08T12:13:25.237",
+      "utcOffsetHours": 2,
+      "latitude": 41.303027,
+      "longitude": 2.07593,
+      "elevationFeet": 13,
+      "classification": 1,
+      "active": true
+    },
+    {
+      "fs": "SVO",
+      "iata": "SVO",
+      "icao": "UUEE",
+      "name": "Sheremetyevo International Airport",
+      "city": "Moscow",
+      "cityCode": "MOW",
+      "countryCode": "RU",
+      "countryName": "Russian Federation",
+      "regionName": "Europe",
+      "timeZoneRegionName": "Europe/Moscow",
+      "localTime": "2017-06-08T13:13:25.203",
+      "utcOffsetHours": 3,
+      "latitude": 55.966324,
+      "longitude": 37.416574,
+      "elevationFeet": 630,
+      "classification": 1,
+      "active": true
+    },
+    {
+      "fs": "AER",
+      "iata": "AER",
+      "icao": "URSS",
+      "name": "Sochi International Airport",
+      "city": "Adler/Sochi",
+      "cityCode": "AER",
+      "countryCode": "RU",
+      "countryName": "Russian Federation",
+      "regionName": "Europe",
+      "timeZoneRegionName": "Europe/Moscow",
+      "localTime": "2017-06-08T13:13:25.237",
+      "utcOffsetHours": 3,
+      "latitude": 43.44884,
+      "longitude": 39.941106,
+      "elevationFeet": 89,
+      "classification": 3,
+      "active": true
+    },
+    {
+      "fs": "VIE",
+      "iata": "VIE",
+      "icao": "LOWW",
+      "name": "Vienna International Airport",
+      "city": "Vienna",
+      "cityCode": "VIE",
+      "countryCode": "AT",
+      "countryName": "Austria",
+      "regionName": "Europe",
+      "timeZoneRegionName": "Europe/Vienna",
+      "localTime": "2017-06-08T12:13:25.237",
+      "utcOffsetHours": 2,
+      "latitude": 48.11972,
+      "longitude": 16.563583,
+      "elevationFeet": 600,
+      "classification": 1,
+      "active": true
+    },
+    {
+      "fs": "PEK",
+      "iata": "PEK",
+      "icao": "ZBAA",
+      "name": "Beijing Capital International Airport",
+      "street1": "Capital Airport Rd",
+      "city": "Beijing",
+      "cityCode": "BJS",
+      "countryCode": "CN",
+      "countryName": "China",
+      "regionName": "Asia",
+      "timeZoneRegionName": "Asia/Shanghai",
+      "localTime": "2017-06-08T18:13:25.237",
+      "utcOffsetHours": 8,
+      "latitude": 40.078538,
+      "longitude": 116.587095,
+      "elevationFeet": 115,
+      "classification": 1,
+      "active": true
+    },
+    {
+      "fs": "SIP",
+      "iata": "SIP",
+      "icao": "UKFF",
+      "name": "Simferopol International Airport",
+      "city": "Simferopol",
+      "cityCode": "SIP",
+      "countryCode": "UA",
+      "countryName": "Ukraine",
+      "regionName": "Europe",
+      "timeZoneRegionName": "Europe/Kiev",
+      "localTime": "2017-06-08T13:13:25.237",
+      "utcOffsetHours": 3,
+      "latitude": 45.020658,
+      "longitude": 33.998193,
+      "elevationFeet": 637,
+      "classification": 4,
+      "active": true
+    },
+    {
+      "fs": "TLV",
+      "iata": "TLV",
+      "icao": "LLBG",
+      "name": "Ben Gurion International Airport",
+      "city": "Tel Aviv-Yafo",
+      "cityCode": "TLV",
+      "countryCode": "IL",
+      "countryName": "Israel",
+      "regionName": "Middle East",
+      "timeZoneRegionName": "Asia/Jerusalem",
+      "localTime": "2017-06-08T13:13:25.237",
+      "utcOffsetHours": 3,
+      "latitude": 32.000454,
+      "longitude": 34.870741,
+      "elevationFeet": 135,
+      "classification": 2,
+      "active": true
+    }
+  ],
+    "equipments": [
+    {
+      "iata": "32A",
+      "name": "Airbus A320 (sharklets)",
+      "turboProp": false,
+      "jet": true,
+      "widebody": false,
+      "regional": false
+    },
+    {
+      "iata": "32B",
+      "name": "Airbus A321 (sharklets)",
+      "turboProp": false,
+      "jet": true,
+      "widebody": false,
+      "regional": false
+    },
+    {
+      "iata": "73H",
+      "name": "Boeing 737-800 (winglets) Passenger/BBJ2",
+      "turboProp": false,
+      "jet": true,
+      "widebody": false,
+      "regional": false
+    },
+    {
+      "iata": "320",
+      "name": "Airbus A320",
+      "turboProp": false,
+      "jet": true,
+      "widebody": false,
+      "regional": false
+    },
+    {
+      "iata": "333",
+      "name": "Airbus A330-300",
+      "turboProp": false,
+      "jet": true,
+      "widebody": true,
+      "regional": false
+    },
+    {
+      "iata": "SU9",
+      "name": "Sukhoi Superjet 100-95",
+      "turboProp": false,
+      "jet": true,
+      "widebody": false,
+      "regional": false
+    }
+  ]
+}
+}
