@@ -6,9 +6,13 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 // модуль комбинирования работы нескольких актшионов
 import { bindActionCreators } from 'redux';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import { deepOrange500 } from 'material-ui/styles/colors';
 import * as getActionData from '../redux/actions/actions';
 // подгрузка компонентов
 import DataTableAirports from '../components/airports/';
+import MainNav from '../components/main-nav';
 
 class Airports extends Component {
   static get propTypes() {
@@ -22,9 +26,17 @@ class Airports extends Component {
   }
   render() {
     const airports = this.props.currentStore.Reducer.airports;
+    const muiTheme = getMuiTheme({
+      palette: {
+        accent1Color: deepOrange500,
+      },
+    });
     return (
       <div>
-        <DataTableAirports infoData={airports} />
+        <MainNav />
+        <MuiThemeProvider muiTheme={muiTheme}>
+          <DataTableAirports infoData={airports} />
+        </MuiThemeProvider>
       </div>
     );
   }

@@ -3,28 +3,25 @@ import { createStore, applyMiddleware } from 'redux';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { deepOrange500 } from 'material-ui/styles/colors';
 import thunk from 'redux-thunk';
+import { BrowserRouter as Router, browserHistory, Route } from 'react-router-dom';
 import reducer from './redux/combineReducer';
 // Импорт кастомных компонент
-import ReactComponent from './containers/container';
-
+// import ReactComponent from './containers/container';
+import Airports from './containers/airptorts';
+import SheduleArrival from './containers/arrival';
+import SheduleDeparture from './containers/departure';
 
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 
-const muiTheme = getMuiTheme({
-  palette: {
-    accent1Color: deepOrange500,
-  },
-});
-
 ReactDOM.render(
   <Provider store={store}>
-    <MuiThemeProvider muiTheme={muiTheme}>
-      <ReactComponent />
-    </MuiThemeProvider>
+    <Router history={browserHistory}>
+      <Route path="/" component={Airports} >
+        <Route path="/arrival" component={SheduleArrival} />
+        <Route path="/departure" component={SheduleDeparture} />
+      </Route>
+    </Router>
   </Provider>,
   document.getElementById('component')
 );
