@@ -8,7 +8,7 @@ export default class MainNav extends Component {
   render() {
     return (
       <ul>
-        <li><Link to="/">Airports</Link></li>
+        <li><Link to="/airports">Airports</Link></li>
         <li><Link to="/arrival">Arrival</Link></li>
         <li><Link to="/departure">Departure</Link></li>
       </ul>

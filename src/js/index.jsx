@@ -7,7 +7,7 @@ import thunk from 'redux-thunk';
 import { BrowserRouter as Router, browserHistory, Route } from 'react-router-dom';
 import reducer from './redux/combineReducer';
 // Импорт кастомных компонент
-// import ReactComponent from './containers/container';
+import ReactComponent from './containers/container';
 import Airports from './containers/airptorts';
 import SheduleArrival from './containers/arrival';
 import SheduleDeparture from './containers/departure';
@@ -17,10 +17,12 @@ const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={Airports} >
+      <div>
+        <Route exact="true" path="/" component={ReactComponent} />
+        <Route path="/airports" component={Airports} />
         <Route path="/arrival" component={SheduleArrival} />
         <Route path="/departure" component={SheduleDeparture} />
-      </Route>
+      </div>
     </Router>
   </Provider>,
   document.getElementById('component')
