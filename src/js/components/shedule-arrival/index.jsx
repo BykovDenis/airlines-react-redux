@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import DataTables from 'material-ui-datatables';
+import AirplaneLandingIcon from 'mdi-react/AirplaneLandingIcon';
 import tableColumns from './arrival-table-settings';
 import CustomDate from './../../helpers/custom-date';
 
@@ -65,6 +66,7 @@ export default class DataTableSheduleArrival extends Component {
     return (
       <div>
         <h2> Arrival </h2>
+        <AirplaneLandingIcon />
         <DataTables
           height={'auto'}
           selectable={false}

@@ -3,7 +3,7 @@
  */
 require('babel-polyfill');
 // Установка режима работы сборщика
-const NODE_ENV = process.env.NODE_ENV || 'development';
+const nodeEnv = process.env.NODE_ENV || 'development';
 // Режим очистки старых файлов билда при каждой сборке
 const REFRESH = process.env.REFRESH;
 // webpack.config.js
@@ -21,10 +21,9 @@ var DashboardPlugin = require('webpack-dashboard/plugin');
 // для плагина по минификации и оптимизации css
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-const srcDir = 'src';
-const outputDir = 'build/';
-
-const assetsPath = path.resolve(__dirname, '../build');
+const buildPath = path.join(__dirname, './build');
+const jsSourcePath = path.join(__dirname, './src');
+const pathRoute = '';
 const host = (process.env.HOST || 'localhost');
 const port = (+process.env.PORT + 1) || 3001;
 
@@ -37,7 +36,6 @@ try {
   console.error('==>     ERROR: Error parsing your .babelrc.');
   console.error(err);
 }
-
 
 var babelrcObjectDevelopment = babelrcObject.env && babelrcObject.env.development || {};
 
@@ -78,16 +76,37 @@ reactTransform[1].transforms.push({
 });
 
 module.exports = {
-  context: __dirname + '/src/',
+  devServer: {
+    contentBase: buildPath,
+    historyApiFallback: true,
+    historyApiFallback: {
+      index: '/airlines/'
+    },
+    publicPath: '/airlines/',
+    stats: {
+      assets: true,
+      children: false,
+      chunks: false,
+      hash: false,
+      modules: false,
+      publicPath: true,
+      timings: true,
+      version: false,
+      warnings: true,
+      colors: {
+        green: '\u001b[32m',
+      },
+    },
+  },
+  context: jsSourcePath,
   entry: {
     components: './js/',
     components_styles: './scss'
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
-    publicPath: '/',
-    filename: 'js/[name].[hash].js',
-    chunkFilename: 'js/[name].[hash].js'
+    path: buildPath,
+    filename: path.join(pathRoute, 'js/[name].[hash].js'),
+    chunkFilename: path.join(pathRoute, 'js/[name].[hash].js')
   },
   devtool: 'inline-source-map',
   // Определение расширений файлов по-умолчанию
@@ -101,19 +120,30 @@ module.exports = {
   },
   // Настройка плагинов
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(nodeEnv),
+      },
+    }),
     // генерация html файла на основе шаблонизатора jade
     new HtmlWebpackPlugin({
       title: 'Title',
       template: 'jade/index.jade',
       inject: true,
-      minify:{
-        collapseWhitespace: false // Переносить теги на новую строку
+      path: jsSourcePath,
+      minify: {
+        collapseWhitespace: true,
+        preserveLineBreaks: true,
+        keepClosingSlash: true,
+        removeAttributeQuotes: true,
+        removeComments: true,
+        trimCustomFragments: true,
       }
     }),
     new DashboardPlugin(),
     // Формировать отдельный css файл
     new ExtractTextPlugin({
-      filename: 'css/[name].[hash].css',
+      filename: path.join(pathRoute, 'css/[name].[hash].css'),
       allChunks: true
     }),
     // это функциональность webpack, предназначенная не только для быстрой подгрузки изменений на машине разработчика, но и для обновления сайтов в production
@@ -166,7 +196,7 @@ module.exports = {
   }
 };
 
-if(NODE_ENV == 'production') {
+if(nodeEnv === 'production') {
   module.exports.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       compress: {
