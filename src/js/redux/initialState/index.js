@@ -1,5 +1,5 @@
 /**
- * Created by Denis on 18.04.2017.
+ * Created by bykovdenis on 20.07.17.
  */
 const initialState = {
   appid: '68c7b8b1',
@@ -11,5 +11,4 @@ const initialState = {
     arriving: {}
   }
 };
-
 export default initialState;

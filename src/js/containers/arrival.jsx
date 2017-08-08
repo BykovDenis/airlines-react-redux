@@ -1,49 +1,34 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 // модуль комбинирования работы нескольких актшионов
 import { bindActionCreators } from 'redux';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { deepOrange500 } from 'material-ui/styles/colors';
-import * as getActionData from '../redux/actions/actions';
+import * as getActionData from '../redux/actions';
 // подгрузка компонентов
 import DataTableSheduleArrival from '../components/shedule-arrival/';
-import MainNav from '../components/main-nav';
 
 class SheduleArrival extends Component {
-  static get propTypes() {
-    return {
-      getData: PropTypes.object.isRequired,
-      currentStore: PropTypes.object.isRequired,
-    };
-  }
   componentDidMount() {
-    this.props.getData.getArrivingData();
+    this.props.getArrivingData();
   }
   render() {
-    const muiTheme = getMuiTheme({
-      palette: {
-        accent1Color: deepOrange500,
-      },
-    });
-    const arriving = this.props.currentStore.Reducer.shedules.arriving;
+    const arriving = this.props.arriving;
     return (
       <div>
-        <MainNav />
-        <MuiThemeProvider muiTheme={muiTheme}>
-          <DataTableSheduleArrival infoData={arriving} />
-        </MuiThemeProvider>
+        <DataTableSheduleArrival infoData={arriving} />
       </div>
     );
   }
 }
 
-const getDataProps = dispatch => (
-  { getData: bindActionCreators(getActionData, dispatch) }
-);
+function mapStateToProps(state) {
+  return state.airlines;
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(getActionData, dispatch);
+}
 
 export default connect(
-  state => ({ currentStore: state }),
-  getDataProps
+  mapStateToProps,
+  mapDispatchToProps
 )(SheduleArrival);

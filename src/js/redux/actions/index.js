@@ -2,9 +2,8 @@
  * Created by Denis on 18.04.2017.
  */
 import { normalize, schema } from 'normalizr';
-
 import * as constants from '../constants/constants';
-import initialState from '../initialState/initialState';
+import initialState from '../initialState';
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
@@ -23,7 +22,6 @@ const urls = {
  * @param dispatch
  */
 function loadJSONPAirportsData(url, dispatch) {
-  /*
   window.responseAirportsData = function responseAirportsData(data = initialState) {
     const mySchema = new schema.Entity('airports', {}, { idAttribute: 'fs' });
     const listSchema = [mySchema];
@@ -36,11 +34,10 @@ function loadJSONPAirportsData(url, dispatch) {
   const script = document.createElement('script');
   script.src = url;
   document.body.appendChild(script);
-  */
   // for test import data from local api
   // Блок с данными от сервера, для тестирования чтобы не нагружать канал
-  console.log(url);
-  fetch('http://localhost:8080/data/response-airports-data.json')
+/*  console.log(url);
+  fetch('http://localhost:8080/airlines/data/response-airports-data.json')
     .then(response => response.json())
     .then((data) => {
       const mySchema = new schema.Entity('airports', {}, { idAttribute: 'fs' });
@@ -51,7 +48,7 @@ function loadJSONPAirportsData(url, dispatch) {
         payload: normalizeData
       });
     })
-    .catch(e => console.log(e));
+    .catch(e => console.log(e));*/
 }
 
 function loadJSONPDepartingData(url, dispatch) {
@@ -69,7 +66,7 @@ function loadJSONPDepartingData(url, dispatch) {
   // for test import data from local api
   // Блок с данными от сервера, для тестирования чтобы не нагружать канал
   console.log(url);
-  fetch('http://localhost:8080/data/shedules_departing.json')
+  fetch('http://localhost:8080/airlines/data/shedules_departing.json')
     .then(response => response.json())
     .then((data) => {
       dispatch({
@@ -95,7 +92,7 @@ function loadJSONPArrivingData(url, dispatch) {
   // for test import data from local api
   // Блок с данными от сервера, для тестирования чтобы не нагружать канал
   console.log(url);
-  fetch('http://localhost:8080/data/shedules_arriving.json')
+  fetch('http://localhost:8080/airlines/data/shedules_arriving.json')
     .then(response => response.json())
     .then((data) => {
       dispatch({

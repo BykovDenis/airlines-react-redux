@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import DataTables from 'material-ui-datatables';
+import AirplaneIcon from 'mdi-react/AirplaneIcon';
 import * as settings from './airportsTableSetting';
 import CustomDate from './../../helpers/custom-date';
 
@@ -99,6 +100,7 @@ export default class DataTableAirports extends Component {
     return (
       <div>
         <h2> Airports </h2>
+        <AirplaneIcon />
         <DataTables
           height={'auto'}
           selectable={false}
