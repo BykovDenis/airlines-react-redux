@@ -5,9 +5,9 @@
     "mocha": true
   },
   "rules": {
+    "global-require": 0,
     "import/no-named-as-default": 0,
     "import/no-named-as-default-member": 0,
-    "global-require": 0,
     "jsx-a11y/label-has-for": [ 0, {
       "components": [ "Label" ]}],
     "no-param-reassign": 0,
